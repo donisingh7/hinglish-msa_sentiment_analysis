@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Sensitive / secrets
+cookies.txt
+config.py
+
+# Large binary / media
+*.mp4
+*.avi
+*.mkv
+model/
+
+# Logs & temp
+logs/
+~/
+
+# Data (usually too large for GitHub; remove this line if you want data tracked)
+data/
+results/
+
+# OS
+.DS_Store
+Thumbs.db
