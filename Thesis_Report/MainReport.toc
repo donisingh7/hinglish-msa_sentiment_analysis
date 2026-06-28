@@ -1,0 +1,98 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{List of Figures}{x}{section*.1}%
+\contentsline {chapter}{List of Tables}{x}{section*.1}%
+\contentsline {chapter}{List of Acronyms}{x}{section*.1}%
+\contentsline {chapter}{List of Publications}{x}{section*.1}%
+\contentsline {chapter}{Abstract}{x}{section*.1}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter*.4}%
+\contentsline {section}{\numberline {1.1}Background and Motivation}{1}{section*.5}%
+\contentsline {section}{\numberline {1.2}Code-Mixing and the Hinglish Phenomenon}{2}{section*.8}%
+\contentsline {section}{\numberline {1.3}The Digital Landscape: Why Hinglish Matters Now}{4}{section*.13}%
+\contentsline {section}{\numberline {1.4}Problem Statement}{4}{section*.16}%
+\contentsline {section}{\numberline {1.5}Research Questions}{5}{section*.19}%
+\contentsline {section}{\numberline {1.6}Objectives}{6}{section*.20}%
+\contentsline {section}{\numberline {1.7}Contributions}{7}{section*.27}%
+\contentsline {section}{\numberline {1.8}Scope and Limitations}{8}{section*.33}%
+\contentsline {section}{\numberline {1.9}Thesis Organisation}{8}{section*.34}%
+\contentsline {chapter}{\numberline {2}Theoretical Background \& Literature Survey}{10}{chapter*.35}%
+\contentsline {section}{\numberline {2.1}Fundamentals of Sentiment Analysis}{10}{section*.36}%
+\contentsline {subsection}{\numberline {2.1.1}Granularity Levels}{10}{subsection*.37}%
+\contentsline {subsection}{\numberline {2.1.2}Methodological Paradigms}{11}{subsection*.40}%
+\contentsline {section}{\numberline {2.2}Multimodal Sentiment Analysis}{11}{section*.43}%
+\contentsline {subsection}{\numberline {2.2.1}Why Text Alone Is Not Enough}{11}{subsection*.44}%
+\contentsline {subsection}{\numberline {2.2.2}Benchmark Datasets}{12}{subsection*.47}%
+\contentsline {subsection}{\numberline {2.2.3}Multimodal Fusion Strategies}{12}{subsection*.50}%
+\contentsline {section}{\numberline {2.3}Attention Mechanisms and Transformer Architecture}{13}{section*.53}%
+\contentsline {subsection}{\numberline {2.3.1}Scaled Dot-Product Attention}{13}{subsection*.54}%
+\contentsline {subsection}{\numberline {2.3.2}Cross-Modal Attention in MulT}{14}{subsection*.59}%
+\contentsline {subsection}{\numberline {2.3.3}Evaluation Metrics}{14}{subsection*.63}%
+\contentsline {section}{\numberline {2.4}Code-Mixed Language Processing}{15}{section*.68}%
+\contentsline {subsection}{\numberline {2.4.1}Linguistic Phenomena}{15}{subsection*.69}%
+\contentsline {subsection}{\numberline {2.4.2}Challenges for NLP Systems}{15}{subsection*.70}%
+\contentsline {subsection}{\numberline {2.4.3}Existing Hinglish and Code-Mixed Resources}{16}{subsection*.76}%
+\contentsline {section}{\numberline {2.5}Pre-trained Foundation Models}{16}{section*.79}%
+\contentsline {subsection}{\numberline {2.5.1}BERT and the Rise of Contextual Representations}{16}{subsection*.80}%
+\contentsline {subsection}{\numberline {2.5.2}MuRIL: Tailored for Indian Languages}{17}{subsection*.81}%
+\contentsline {subsection}{\numberline {2.5.3}wav2vec 2.0 and XLSR-53}{17}{subsection*.82}%
+\contentsline {subsection}{\numberline {2.5.4}CLIP: Contrastive Language-Image Pre-training}{18}{subsection*.84}%
+\contentsline {subsection}{\numberline {2.5.5}Whisper: Robust Multilingual ASR}{18}{subsection*.86}%
+\contentsline {subsection}{\numberline {2.5.6}Comparison of Encoders Used in This Thesis}{18}{subsection*.87}%
+\contentsline {section}{\numberline {2.6}Large Language Models for Annotation}{18}{section*.90}%
+\contentsline {section}{\numberline {2.7}Summary and Research Gap}{19}{section*.91}%
+\contentsline {chapter}{\numberline {3}Implementation and Proposed Methodology}{21}{chapter*.94}%
+\contentsline {section}{\numberline {3.1}System Overview}{21}{section*.95}%
+\contentsline {section}{\numberline {3.2}HinglishMSA Dataset Construction}{22}{section*.98}%
+\contentsline {subsection}{\numberline {3.2.1}Source Selection and Data Collection Strategy}{22}{subsection*.99}%
+\contentsline {subsection}{\numberline {3.2.2}Download and Frame Extraction}{22}{subsection*.102}%
+\contentsline {subsection}{\numberline {3.2.3}Audio Segmentation}{23}{subsection*.103}%
+\contentsline {subsection}{\numberline {3.2.4}Face Detection and Visual Filtering}{23}{subsection*.104}%
+\contentsline {subsection}{\numberline {3.2.5}Transcription with Whisper}{23}{subsection*.105}%
+\contentsline {subsection}{\numberline {3.2.6}Hinglish Detection Algorithm}{24}{subsection*.106}%
+\contentsline {subsection}{\numberline {3.2.7}LLM-Based Sentiment Annotation}{25}{subsection*.114}%
+\contentsline {subsubsection}{\numberline {3.2.7.1}Annotation Strategy}{25}{subsubsection*.115}%
+\contentsline {subsubsection}{\numberline {3.2.7.2}Prompt Design}{25}{subsubsection*.116}%
+\contentsline {subsubsection}{\numberline {3.2.7.3}Confidence Stratification}{26}{subsubsection*.117}%
+\contentsline {subsubsection}{\numberline {3.2.7.4}Annotation Results}{26}{subsubsection*.118}%
+\contentsline {subsection}{\numberline {3.2.8}Test Set Construction}{27}{subsection*.119}%
+\contentsline {subsection}{\numberline {3.2.9}Dataset Statistics}{27}{subsection*.120}%
+\contentsline {section}{\numberline {3.3}Feature Extraction}{27}{section*.127}%
+\contentsline {subsection}{\numberline {3.3.1}Text Features: MuRIL}{29}{subsection*.130}%
+\contentsline {subsection}{\numberline {3.3.2}Audio Features: wav2vec2-XLSR-53}{29}{subsection*.131}%
+\contentsline {subsection}{\numberline {3.3.3}Visual Features: CLIP}{29}{subsection*.132}%
+\contentsline {section}{\numberline {3.4}MulTHinglish Model Architecture}{30}{section*.135}%
+\contentsline {subsection}{\numberline {3.4.1}Modality Projection}{31}{subsection*.138}%
+\contentsline {subsection}{\numberline {3.4.2}Directional Cross-Modal Attention Layers}{31}{subsection*.139}%
+\contentsline {subsection}{\numberline {3.4.3}Fusion and Prediction Head}{32}{subsection*.146}%
+\contentsline {subsection}{\numberline {3.4.4}Parameter Count Analysis}{33}{subsection*.150}%
+\contentsline {section}{\numberline {3.5}Training Procedure}{33}{section*.153}%
+\contentsline {subsection}{\numberline {3.5.1}Data Splits}{33}{subsection*.154}%
+\contentsline {subsection}{\numberline {3.5.2}Optimisation Configuration}{33}{subsection*.157}%
+\contentsline {subsection}{\numberline {3.5.3}Training Infrastructure}{34}{subsection*.162}%
+\contentsline {section}{\numberline {3.6}Experimental Configurations}{34}{section*.163}%
+\contentsline {section}{\numberline {3.7}Implementation Details and Reproducibility}{35}{section*.168}%
+\contentsline {subsection}{\numberline {3.7.1}Software Stack}{35}{subsection*.169}%
+\contentsline {subsection}{\numberline {3.7.2}Reproducibility Measures}{35}{subsection*.170}%
+\contentsline {chapter}{\numberline {4}Results, Analysis and Conclusion}{37}{chapter*.171}%
+\contentsline {section}{\numberline {4.1}Experimental Setup}{37}{section*.172}%
+\contentsline {subsection}{\numberline {4.1.1}Evaluation Metrics}{37}{subsection*.173}%
+\contentsline {subsection}{\numberline {4.1.2}Experimental Configurations}{38}{subsection*.174}%
+\contentsline {subsection}{\numberline {4.1.3}Hyperparameter Configuration}{38}{subsection*.177}%
+\contentsline {section}{\numberline {4.2}Experimental Results}{39}{section*.180}%
+\contentsline {subsection}{\numberline {4.2.1}Main Results}{39}{subsection*.181}%
+\contentsline {subsection}{\numberline {4.2.2}Per-Experiment Analysis}{39}{subsection*.188}%
+\contentsline {subsection}{\numberline {4.2.3}Convergence Behaviour}{41}{subsection*.189}%
+\contentsline {section}{\numberline {4.3}Analysis and Discussion}{41}{section*.192}%
+\contentsline {subsection}{\numberline {4.3.1}Multimodal Fusion is Indispensable}{41}{subsection*.193}%
+\contentsline {subsection}{\numberline {4.3.2}Annotation Quality and the Case for Confidence Stratification}{42}{subsection*.196}%
+\contentsline {subsection}{\numberline {4.3.3}Performance Gap Relative to English Benchmarks}{42}{subsection*.197}%
+\contentsline {subsection}{\numberline {4.3.4}Error Analysis}{43}{subsection*.201}%
+\contentsline {subsection}{\numberline {4.3.5}Cross-Modal Contribution Summary}{44}{subsection*.204}%
+\contentsline {section}{\numberline {4.4}Research Contributions and Broader Impact}{44}{section*.207}%
+\contentsline {section}{\numberline {4.5}Conclusion}{45}{section*.210}%
+\contentsline {section}{\numberline {4.6}Future Work}{46}{section*.215}%
+\contentsline {chapter}{Appendix \numberline {A}HinglishMSA: Technical Specifications}{52}{chapter*.225}%
+\contentsline {section}{\numberline {A.1}Model Hyperparameters}{52}{section*.226}%
+\contentsline {section}{\numberline {A.2}Pre-trained Model Specifications}{53}{section*.229}%
+\contentsline {section}{\numberline {A.3}Dataset Construction Timeline}{53}{section*.232}%
+\contentsline {section}{\numberline {A.4}Feature File Inventory}{54}{section*.235}%
+\contentsline {chapter}{ Bibliography}{52}{chapter*.224}%

@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build LaTeX PDF",
+      "type": "shell",
+      "command": "C:/Users/Admin/AppData/Local/Programs/MiKTeX/miktex/bin/x64/pdflatex.exe",
+      "args": [
+        "-synctex=1",
+        "-interaction=batchmode",
+        "-file-line-error",
+        "MainReport.tex"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Full Build (pdflatex + bibtex + pdflatex x2)",
+      "type": "shell",
+      "command": "C:/Users/Admin/AppData/Local/Programs/MiKTeX/miktex/bin/x64/pdflatex.exe -interaction=batchmode MainReport.tex && C:/Users/Admin/AppData/Local/Programs/MiKTeX/miktex/bin/x64/bibtex.exe MainReport && C:/Users/Admin/AppData/Local/Programs/MiKTeX/miktex/bin/x64/pdflatex.exe -interaction=batchmode MainReport.tex && C:/Users/Admin/AppData/Local/Programs/MiKTeX/miktex/bin/x64/pdflatex.exe -interaction=batchmode MainReport.tex",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

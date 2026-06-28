@@ -1,0 +1,186 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\citation{liu2012sentiment}
+\citation{cambria2016affective}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Theoretical Background \& Literature Survey}{10}{chapter*.35}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Fundamentals of Sentiment Analysis}{10}{section*.36}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Granularity Levels}{10}{subsection*.37}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Granularity levels in sentiment analysis, with examples and typical NLP applications}}{10}{table.39}\protected@file@percent }
+\newlabel{tab:granularity}{{2.1}{10}{Granularity levels in sentiment analysis, with examples and typical NLP applications}{table.39}{}}
+\citation{wankhade2022survey}
+\citation{lecun2015deep}
+\citation{cambria2016affective}
+\citation{wankhade2022survey}
+\citation{lecun2015deep}
+\citation{mikolov2013distributed}
+\citation{pennington2014glove}
+\citation{hochreiter1997lstm}
+\citation{vaswani2017attention}
+\citation{devlin2019bert}
+\citation{brown2020gpt3}
+\citation{touvron2023llama}
+\citation{poria2017review}
+\citation{poria2017review}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Methodological Paradigms}{11}{subsection*.40}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Chronological evolution of sentiment analysis methodologies, from hand-crafted lexicons to pre-trained transformer models.}}{11}{figure.42}\protected@file@percent }
+\newlabel{fig:sa_evolution}{{2.1}{11}{Chronological evolution of sentiment analysis methodologies, from hand-crafted lexicons to pre-trained transformer models}{figure.42}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Multimodal Sentiment Analysis}{11}{section*.43}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Why Text Alone Is Not Enough}{11}{subsection*.44}\protected@file@percent }
+\citation{zadeh2016mosi}
+\citation{zadeh2018multimodal}
+\citation{busso2008iemocap}
+\citation{zadeh2016mosi}
+\citation{zadeh2018multimodal}
+\citation{busso2008iemocap}
+\citation{liang2021multibench}
+\citation{guo2023recent}
+\citation{tsai2019multimodal}
+\citation{pham2019found}
+\citation{hazarika2020misa}
+\citation{yang2021mtag}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Three modality streams used in HinglishMSA and the feature representations extracted by the corresponding pre-trained encoders.}}{12}{figure.46}\protected@file@percent }
+\newlabel{fig:modality_features}{{2.2}{12}{Three modality streams used in HinglishMSA and the feature representations extracted by the corresponding pre-trained encoders}{figure.46}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Benchmark Datasets}{12}{subsection*.47}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces Comparison of major multimodal sentiment and emotion datasets}}{12}{table.49}\protected@file@percent }
+\newlabel{tab:msa_datasets}{{2.2}{12}{Comparison of major multimodal sentiment and emotion datasets}{table.49}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Multimodal Fusion Strategies}{12}{subsection*.50}\protected@file@percent }
+\citation{vaswani2017attention}
+\citation{vaswani2017attention}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Three multimodal fusion strategies. Early fusion concatenates raw features; late fusion combines independent unimodal predictions; model-level fusion (used in this thesis via MulT) learns cross-modal interactions during representation learning.}}{13}{figure.52}\protected@file@percent }
+\newlabel{fig:fusion_strategies}{{2.3}{13}{Three multimodal fusion strategies. Early fusion concatenates raw features; late fusion combines independent unimodal predictions; model-level fusion (used in this thesis via MulT) learns cross-modal interactions during representation learning}{figure.52}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Attention Mechanisms and Transformer Architecture}{13}{section*.53}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Scaled Dot-Product Attention}{13}{subsection*.54}\protected@file@percent }
+\newlabel{eq:attention}{{2.1}{13}{Scaled Dot-Product Attention}{equation*.55}{}}
+\newlabel{eq:multihead}{{2.2}{13}{Scaled Dot-Product Attention}{equation*.56}{}}
+\newlabel{eq:ln1}{{2.3}{13}{Scaled Dot-Product Attention}{equation*.57}{}}
+\newlabel{eq:ln2}{{2.4}{13}{Scaled Dot-Product Attention}{equation*.58}{}}
+\citation{tsai2019multimodal}
+\citation{zadeh2016mosi}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Cross-Modal Attention in MulT}{14}{subsection*.59}\protected@file@percent }
+\newlabel{eq:cross_attn}{{2.5}{14}{Cross-Modal Attention in MulT}{equation*.60}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Cross-modal attention in MulT. Solid arrows indicate the query source (the modality being enriched); dashed arrows indicate key-value sources (the modalities providing context). Each fused representation $\hat  {Z}_\alpha $ integrates attended information from both other modalities.}}{14}{figure.62}\protected@file@percent }
+\newlabel{fig:ch2crossattn}{{2.4}{14}{Cross-modal attention in MulT. Solid arrows indicate the query source (the modality being enriched); dashed arrows indicate key-value sources (the modalities providing context). Each fused representation $\hat {Z}_\alpha $ integrates attended information from both other modalities}{figure.62}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Evaluation Metrics}{14}{subsection*.63}\protected@file@percent }
+\newlabel{eq:mae}{{2.6}{14}{Evaluation Metrics}{equation*.64}{}}
+\newlabel{eq:pearson}{{2.7}{14}{Evaluation Metrics}{equation*.65}{}}
+\newlabel{eq:acc2}{{2.8}{14}{Evaluation Metrics}{equation*.66}{}}
+\newlabel{eq:f1}{{2.9}{14}{Evaluation Metrics}{equation*.67}{}}
+\citation{barman2014code}
+\citation{srinivasan2020code}
+\citation{srinivasan2020code}
+\citation{aguilar2020lince,barman2014code}
+\citation{radford2023whisper}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Code-Mixed Language Processing}{15}{section*.68}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Linguistic Phenomena}{15}{subsection*.69}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Challenges for NLP Systems}{15}{subsection*.70}\protected@file@percent }
+\citation{winata2019code}
+\citation{joshi2016towards}
+\citation{joshi2016towards}
+\citation{barman2014code}
+\citation{aguilar2020lince}
+\citation{winata2019code}
+\citation{devlin2019bert}
+\citation{khanuja2021muril}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}Existing Hinglish and Code-Mixed Resources}{16}{subsection*.76}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2.3}{\ignorespaces Existing code-mixed NLP datasets, predominantly text-only and small-scale}}{16}{table.78}\protected@file@percent }
+\newlabel{tab:codemix_datasets}{{2.3}{16}{Existing code-mixed NLP datasets, predominantly text-only and small-scale}{table.78}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Pre-trained Foundation Models}{16}{section*.79}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}BERT and the Rise of Contextual Representations}{16}{subsection*.80}\protected@file@percent }
+\citation{khanuja2021muril}
+\citation{baevski2020wav2vec}
+\citation{conneau2021xlsr}
+\citation{radford2021clip}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}MuRIL: Tailored for Indian Languages}{17}{subsection*.81}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.3}wav2vec 2.0 and XLSR-53}{17}{subsection*.82}\protected@file@percent }
+\newlabel{eq:wav2vec}{{2.10}{17}{wav2vec 2.0 and XLSR-53}{equation*.83}{}}
+\citation{radford2023whisper}
+\citation{khanuja2021muril}
+\citation{conneau2021xlsr}
+\citation{radford2021clip}
+\citation{radford2023whisper}
+\citation{brown2020gpt3}
+\citation{touvron2023llama}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.4}CLIP: Contrastive Language-Image Pre-training}{18}{subsection*.84}\protected@file@percent }
+\newlabel{eq:clip}{{2.11}{18}{CLIP: Contrastive Language-Image Pre-training}{equation*.85}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.5}Whisper: Robust Multilingual ASR}{18}{subsection*.86}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.6}Comparison of Encoders Used in This Thesis}{18}{subsection*.87}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2.4}{\ignorespaces Pre-trained encoders used in MulTHinglish: architecture, output dimensionality, and language coverage}}{18}{table.89}\protected@file@percent }
+\newlabel{tab:encoders}{{2.4}{18}{Pre-trained encoders used in MulTHinglish: architecture, output dimensionality, and language coverage}{table.89}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Large Language Models for Annotation}{18}{section*.90}\protected@file@percent }
+\citation{touvron2023llama}
+\citation{liu2012sentiment}
+\citation{zadeh2016mosi}
+\citation{zadeh2018multimodal}
+\citation{tsai2019multimodal}
+\citation{vaswani2017attention}
+\citation{hazarika2020misa}
+\citation{yang2021mtag}
+\citation{khanuja2021muril}
+\citation{conneau2021xlsr}
+\citation{radford2021clip}
+\citation{radford2023whisper}
+\citation{joshi2016towards}
+\citation{barman2014code}
+\citation{aguilar2020lince}
+\citation{touvron2023llama}
+\@writefile{toc}{\contentsline {section}{\numberline {2.7}Summary and Research Gap}{19}{section*.91}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2.5}{\ignorespaces Summary of directly relevant prior works and their contribution to this thesis}}{20}{table.93}\protected@file@percent }
+\newlabel{tab:litsurvey}{{2.5}{20}{Summary of directly relevant prior works and their contribution to this thesis}{table.93}{}}
+\@setckpt{Chapter2/ch2}{
+\setcounter{page}{21}
+\setcounter{equation}{11}
+\setcounter{enumi}{5}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{2}
+\setcounter{section}{7}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{4}
+\setcounter{table}{5}
+\setcounter{parentequation}{0}
+\setcounter{section@level}{1}
+\setcounter{Item}{16}
+\setcounter{Hfootnote}{0}
+\setcounter{bookmark@seq@number}{40}
+\setcounter{nlinenum}{0}
+\setcounter{NAT@ctr}{0}
+\setcounter{subfigure}{0}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{lotdepth}{1}
+\setcounter{float@type}{16}
+\setcounter{algorithm}{0}
+\setcounter{ALC@unique}{0}
+\setcounter{ALC@line}{0}
+\setcounter{ALC@rem}{0}
+\setcounter{ALC@depth}{0}
+\setcounter{lstnumber}{1}
+\setcounter{r@tfl@t}{0}
+\setcounter{LT@tables}{0}
+\setcounter{LT@chunks}{0}
+\setcounter{@pps}{0}
+\setcounter{@ppsavesec}{0}
+\setcounter{@ppsaveapp}{0}
+\setcounter{blindtext}{1}
+\setcounter{Blindtext}{5}
+\setcounter{blind@countparstart}{0}
+\setcounter{blindlist}{0}
+\setcounter{blindlistlevel}{0}
+\setcounter{blindlist@level}{0}
+\setcounter{blind@listcount}{0}
+\setcounter{blind@levelcount}{0}
+\setcounter{blind@randomcount}{0}
+\setcounter{blind@randommax}{0}
+\setcounter{blind@pangramcount}{0}
+\setcounter{blind@pangrammax}{0}
+\setcounter{lstlisting}{0}
+}

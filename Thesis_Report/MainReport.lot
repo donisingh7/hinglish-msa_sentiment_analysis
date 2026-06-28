@@ -1,0 +1,29 @@
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{\ignorespaces Structural patterns of Hinglish code-mixing observed in HinglishMSA, with examples and English glosses}}{3}{table.12}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces Comparison of HinglishMSA with established multimodal sentiment benchmarks}}{6}{table.18}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Granularity levels in sentiment analysis, with examples and typical NLP applications}}{10}{table.39}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Comparison of major multimodal sentiment and emotion datasets}}{12}{table.49}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Existing code-mixed NLP datasets, predominantly text-only and small-scale}}{16}{table.78}%
+\contentsline {table}{\numberline {2.4}{\ignorespaces Pre-trained encoders used in MulTHinglish: architecture, output dimensionality, and language coverage}}{18}{table.89}%
+\contentsline {table}{\numberline {2.5}{\ignorespaces Summary of directly relevant prior works and their contribution to this thesis}}{20}{table.93}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces YouTube search query domains and example queries used for HinglishMSA collection}}{22}{table.101}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces HinglishMSA dataset statistics across all pipeline stages}}{27}{table.122}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Summary of feature extraction configuration for all three modalities}}{29}{table.129}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces MulTHinglish parameter count breakdown by module}}{33}{table.152}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces HinglishMSA train / validation / test split statistics}}{33}{table.156}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Five experimental configurations for ablation study of modality contributions}}{35}{table.165}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Full specification of the five experimental configurations}}{38}{table.176}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Hyperparameter configuration for MulTHinglish experiments}}{39}{table.179}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Test-set results on HinglishMSA (150 clips, human-verified). CMU-MOSI shown for reference only, not direct comparison.}}{39}{table.183}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Convergence behaviour: best epoch and validation MAE for each experiment}}{41}{table.191}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces E3 prediction error analysis by ground-truth score range on the test set}}{43}{table.203}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Research contributions mapped to the gaps identified in Chapter~2}}{44}{table.209}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces MulTHinglish Model Hyperparameters}}{52}{table.228}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Pre-trained Models Used for Feature Extraction}}{53}{table.231}%
+\contentsline {table}{\numberline {A.3}{\ignorespaces HinglishMSA Pipeline: Tools, Outputs, and Estimated Time}}{53}{table.234}%
+\contentsline {table}{\numberline {A.4}{\ignorespaces Feature Files Produced by HinglishMSA Pipeline}}{54}{table.237}%

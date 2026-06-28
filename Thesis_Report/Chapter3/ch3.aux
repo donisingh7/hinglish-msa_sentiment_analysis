@@ -1,0 +1,137 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Implementation and Proposed Methodology}{21}{chapter*.94}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}System Overview}{21}{section*.95}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Five-stage HinglishMSA end-to-end pipeline from YouTube video collection to sentiment score prediction.}}{21}{figure.97}\protected@file@percent }
+\newlabel{fig:tikz_pipeline}{{3.1}{21}{Five-stage HinglishMSA end-to-end pipeline from YouTube video collection to sentiment score prediction}{figure.97}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}HinglishMSA Dataset Construction}{22}{section*.98}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Source Selection and Data Collection Strategy}{22}{subsection*.99}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces YouTube search query domains and example queries used for HinglishMSA collection}}{22}{table.101}\protected@file@percent }
+\newlabel{tab:queries}{{3.1}{22}{YouTube search query domains and example queries used for HinglishMSA collection}{table.101}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Download and Frame Extraction}{22}{subsection*.102}\protected@file@percent }
+\citation{radford2023whisper}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Audio Segmentation}{23}{subsection*.103}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Face Detection and Visual Filtering}{23}{subsection*.104}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.5}Transcription with Whisper}{23}{subsection*.105}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.6}Hinglish Detection Algorithm}{24}{subsection*.106}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Three-stage Hinglish detection algorithm. Stages are applied in order; a transcript exits the pipeline as soon as it satisfies any stage's criterion.}}{24}{figure.108}\protected@file@percent }
+\newlabel{fig:tikz_detection}{{3.2}{24}{Three-stage Hinglish detection algorithm. Stages are applied in order; a transcript exits the pipeline as soon as it satisfies any stage's criterion}{figure.108}{}}
+\citation{touvron2023llama}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Detection count comparison: naive ASR language label vs.\ three-stage Hinglish detection algorithm across 29,500 transcribed clips.}}{25}{figure.113}\protected@file@percent }
+\newlabel{fig:detection}{{3.3}{25}{Detection count comparison: naive ASR language label vs.\ three-stage Hinglish detection algorithm across 29,500 transcribed clips}{figure.113}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.7}LLM-Based Sentiment Annotation}{25}{subsection*.114}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.7.1}Annotation Strategy}{25}{subsubsection*.115}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.7.2}Prompt Design}{25}{subsubsection*.116}\protected@file@percent }
+\citation{brown2020gpt3}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.7.3}Confidence Stratification}{26}{subsubsection*.117}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.7.4}Annotation Results}{26}{subsubsection*.118}\protected@file@percent }
+\citation{khanuja2021muril}
+\citation{conneau2021xlsr}
+\citation{radford2021clip}
+\citation{khanuja2021muril}
+\citation{devlin2019bert}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.8}Test Set Construction}{27}{subsection*.119}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.9}Dataset Statistics}{27}{subsection*.120}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces HinglishMSA dataset statistics across all pipeline stages}}{27}{table.122}\protected@file@percent }
+\newlabel{tab:dataset_stats}{{3.2}{27}{HinglishMSA dataset statistics across all pipeline stages}{table.122}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Feature Extraction}{27}{section*.127}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces HinglishMSA dataset construction funnel showing the number of clips surviving each filtering stage.}}{28}{figure.124}\protected@file@percent }
+\newlabel{fig:funnel}{{3.4}{28}{HinglishMSA dataset construction funnel showing the number of clips surviving each filtering stage}{figure.124}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces HinglishMSA sentiment score distribution (left) and annotation confidence breakdown (right).}}{28}{figure.126}\protected@file@percent }
+\newlabel{fig:scoredist}{{3.5}{28}{HinglishMSA sentiment score distribution (left) and annotation confidence breakdown (right)}{figure.126}{}}
+\citation{conneau2021xlsr}
+\citation{radford2021clip}
+\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Summary of feature extraction configuration for all three modalities}}{29}{table.129}\protected@file@percent }
+\newlabel{tab:features}{{3.3}{29}{Summary of feature extraction configuration for all three modalities}{table.129}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Text Features: MuRIL}{29}{subsection*.130}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Audio Features: wav2vec2-XLSR-53}{29}{subsection*.131}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Visual Features: CLIP}{29}{subsection*.132}\protected@file@percent }
+\citation{tsai2019multimodal}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Feature extraction for the three modalities. Each clip produces a fixed-length vector stored offline before model training.}}{30}{figure.134}\protected@file@percent }
+\newlabel{fig:tikz_feat}{{3.6}{30}{Feature extraction for the three modalities. Each clip produces a fixed-length vector stored offline before model training}{figure.134}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}MulTHinglish Model Architecture}{30}{section*.135}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces MulTHinglish architecture: three modality streams are projected to a common dimension, processed by six directed cross-modal attention modules, concatenated, and passed through a regression head.}}{30}{figure.137}\protected@file@percent }
+\newlabel{fig:arch}{{3.7}{30}{MulTHinglish architecture: three modality streams are projected to a common dimension, processed by six directed cross-modal attention modules, concatenated, and passed through a regression head}{figure.137}{}}
+\citation{vaswani2017attention}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Modality Projection}{31}{subsection*.138}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Directional Cross-Modal Attention Layers}{31}{subsection*.139}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Six directed cross-modal attention streams in MulTHinglish (T = Text, A = Audio, V = Visual). Each directed edge represents a four-layer cross-modal transformer.}}{32}{figure.145}\protected@file@percent }
+\newlabel{fig:crossattn}{{3.8}{32}{Six directed cross-modal attention streams in MulTHinglish (T = Text, A = Audio, V = Visual). Each directed edge represents a four-layer cross-modal transformer}{figure.145}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Fusion and Prediction Head}{32}{subsection*.146}\protected@file@percent }
+\citation{vaswani2017attention}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}Parameter Count Analysis}{33}{subsection*.150}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces MulTHinglish parameter count breakdown by module}}{33}{table.152}\protected@file@percent }
+\newlabel{tab:params}{{3.4}{33}{MulTHinglish parameter count breakdown by module}{table.152}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Training Procedure}{33}{section*.153}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Data Splits}{33}{subsection*.154}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces HinglishMSA train / validation / test split statistics}}{33}{table.156}\protected@file@percent }
+\newlabel{tab:splits}{{3.5}{33}{HinglishMSA train / validation / test split statistics}{table.156}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}Optimisation Configuration}{33}{subsection*.157}\protected@file@percent }
+\citation{poria2017review}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}Training Infrastructure}{34}{subsection*.162}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}Experimental Configurations}{34}{section*.163}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.6}{\ignorespaces Five experimental configurations for ablation study of modality contributions}}{35}{table.165}\protected@file@percent }
+\newlabel{tab:experiments}{{3.6}{35}{Five experimental configurations for ablation study of modality contributions}{table.165}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Modality inclusion matrix across the five experimental configurations. Green (\text  {$\mathsurround \z@ \mathchar "458$}) indicates modality active; red ($\times $) indicates modality absent.}}{35}{figure.167}\protected@file@percent }
+\newlabel{fig:tikz_ablation}{{3.9}{35}{Modality inclusion matrix across the five experimental configurations. Green (\checkmark ) indicates modality active; red ($\times $) indicates modality absent}{figure.167}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.7}Implementation Details and Reproducibility}{35}{section*.168}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.1}Software Stack}{35}{subsection*.169}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.2}Reproducibility Measures}{35}{subsection*.170}\protected@file@percent }
+\@setckpt{Chapter3/ch3}{
+\setcounter{page}{37}
+\setcounter{equation}{7}
+\setcounter{enumi}{4}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{3}
+\setcounter{section}{7}
+\setcounter{subsection}{2}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{9}
+\setcounter{table}{6}
+\setcounter{parentequation}{0}
+\setcounter{section@level}{2}
+\setcounter{Item}{23}
+\setcounter{Hfootnote}{0}
+\setcounter{bookmark@seq@number}{73}
+\setcounter{nlinenum}{0}
+\setcounter{NAT@ctr}{0}
+\setcounter{subfigure}{0}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{lotdepth}{1}
+\setcounter{float@type}{16}
+\setcounter{algorithm}{0}
+\setcounter{ALC@unique}{0}
+\setcounter{ALC@line}{0}
+\setcounter{ALC@rem}{0}
+\setcounter{ALC@depth}{0}
+\setcounter{lstnumber}{1}
+\setcounter{r@tfl@t}{0}
+\setcounter{LT@tables}{0}
+\setcounter{LT@chunks}{0}
+\setcounter{@pps}{0}
+\setcounter{@ppsavesec}{0}
+\setcounter{@ppsaveapp}{0}
+\setcounter{blindtext}{1}
+\setcounter{Blindtext}{5}
+\setcounter{blind@countparstart}{0}
+\setcounter{blindlist}{0}
+\setcounter{blindlistlevel}{0}
+\setcounter{blindlist@level}{0}
+\setcounter{blind@listcount}{0}
+\setcounter{blind@levelcount}{0}
+\setcounter{blind@randomcount}{0}
+\setcounter{blind@randommax}{0}
+\setcounter{blind@pangramcount}{0}
+\setcounter{blind@pangrammax}{0}
+\setcounter{lstlisting}{0}
+}

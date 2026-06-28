@@ -1,0 +1,19 @@
+\label{sec:abstract}
+\onehalfspacing
+\timesnr{
+\textit{
+Sentiment analysis of social media content has gained tremendous attention with the rise of user-generated video platforms. However, existing multimodal sentiment datasets predominantly focus on English, leaving a critical gap for low-resource code-mixed languages. Hinglish---a code-mixed variety of Hindi and English---is spoken by over 600 million people in the Indian subcontinent and presents unique linguistic challenges due to its informal structure, lexical borrowing, and intra-sentential script mixing.
+
+This thesis introduces \textbf{HinglishMSA}, the first multimodal sentiment analysis dataset for Hinglish code-mixed language, constructed from YouTube videos. The dataset comprises 2,652 short video clips sourced from 1,174 diverse videos, each annotated with a continuous sentiment score in the range $[-3, +3]$ using an LLM-based automated annotation pipeline (\textit{llama-3.1-8b-instant} via Groq API) with human verification of the held-out evaluation subset.
+
+We propose \textbf{MulTHinglish}, a cross-lingual multimodal transformer model that fuses three complementary modalities: (1) 768-dimensional text embeddings from MuRIL, a multilingual BERT variant pre-trained on 17 Indian languages including Hindi; (2) 1024-dimensional speech embeddings from wav2vec2-XLSR-53, a cross-lingual speech representation model covering 53 languages; and (3) 512-dimensional visual embeddings from CLIP ViT-B/32. The model employs directional cross-modal attention across all six modality-pair directions and achieves binary sentiment accuracy of 70.0\% and an F1 score of 0.702 on the HinglishMSA test set.
+
+Ablation experiments confirm that audio and visual modalities contribute decisively: a text-only baseline degrades to 41.3\% accuracy, demonstrating a 28.7 percentage point gain from multimodal fusion. Additionally, training on high-confidence LLM annotations alone yields 72.0\% accuracy (Pearson $r=0.546$), validating the confidence stratification strategy. HinglishMSA bridges a critical resource gap and provides a reproducible foundation for future research in multilingual affective computing.
+}}
+\vspace*{20pt}
+
+\it{ \textbf{Keywords: }{
+    Sentiment Analysis, Hinglish, Code-Mixed Language, Multimodal Learning, Multimodal Transformer, MuRIL, wav2vec2-XLSR, CLIP, Cross-Lingual Representation, Dataset Construction
+}}
+
+\newpage

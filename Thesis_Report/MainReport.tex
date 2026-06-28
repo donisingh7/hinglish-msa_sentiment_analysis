@@ -1,0 +1,219 @@
+
+\documentclass{SVNITMASTERReport}
+%------------------------------------------------------------------------------
+%Preamble
+%Do not omit the following fields
+%------------------------------------------------------------------------------
+%Seminar Type
+\seminarType{M.Tech.\ Major Project Dissertation}
+%specialization keep one
+\specialization{COMPUTER SCIENCE AND ENGINEERING WITH SPECIALIZATION IN INFORMATION SECURITY AND PRIVACY}
+%Author title. Valid entries : Mr. Ms. Mrs.
+\atitle{Mr.}
+
+%Author name
+\author{Piyush Rahangdale}
+
+%Report title
+\title{HinglishMSA: A Multimodal Sentiment Analysis Dataset and Framework for Hindi-English Code-Mixed Speech}
+
+%Department name
+\dept{Computer Science And Engineering}
+
+%Registration number
+\regno{P24IS020}
+
+%Supervisor title. Examples : Dr. Prof.
+\stitleI{Dr.}
+\supervisorI{Dhiren R. Patel}
+
+\sinstI{SVNIT}
+\scityI{Surat}
+
+\stitleII{Mr.}
+\supervisorII{Xinquan Zhang}
+\sinstII{Qorix}
+\scityII{Pune}
+
+\hodtitle{Dr.}
+\hodname{Sankita J. Patel}
+
+%Institute name
+\addressInstN{Sardar Vallabhbhai National}
+\addressInstD{Institute of Technology}
+\addressInstP{Surat} 
+
+%Month
+\acMonth{June}
+
+%Academic Year
+\acYear{2025 -- 2026}
+
+%Calander Year
+\calYear{2026}
+
+%Institute logo file		
+\instlogo{./Figures/logo}
+
+%Path to border-style page
+\borderPath{./Figures/border}
+
+%------------------------------------------------------------------------------
+%Preamble Ends here
+%------------------------------------------------------------------------------
+
+% User packages
+\usepackage{makecell}
+\usepackage[numbers,sort&compress]{natbib}
+\renewcommand{\bibfont}{\footnotesize}
+\setlength{\bibsep}{5pt}
+\usepackage{multicol}
+% User packages (You can add as many as you want)
+
+\usepackage{amssymb}  %  for double struck characters
+\usepackage{subfigure} % for subfigures
+\usepackage{enumerate}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{listings}
+\usepackage{fancybox}
+\usepackage{makeidx}  % allows for indexgeneration
+\usepackage{graphicx} % for adding figures
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usetikzlibrary{arrows,positioning,decorations.pathreplacing}
+\usepackage{ctable}
+\usepackage{float}
+\usepackage{stmaryrd}
+\usepackage{listings}
+\usepackage{fancybox}
+\usepackage{txfonts}
+\usepackage{subfigure}
+\usepackage{rotating}
+\usepackage{tabularx}
+\usepackage{longtable} % also needed by longtabu
+\usepackage{tabu}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{upgreek}
+\usepackage{tipa} 
+\usepackage{color}
+%\usepackage{fontenc}
+\usepackage[titletoc]{appendix}
+\usepackage{url}
+\usepackage{acronym}
+\usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{pbsi}
+\usepackage[T1]{fontenc}
+\usepackage{calligra} 
+\usepackage{fancyhdr}
+\usepackage{natbib}
+\usepackage[english]{babel}
+\usepackage{afterpage}
+\usepackage{booktabs, multirow} % for borders and merged ranges
+\usepackage{soul}% for underlines
+\usepackage[table]{xcolor} % for cell colors
+% \usepackage{natbib}
+\usepackage{pgfsys}
+\hypersetup{hypertexnames=false}
+
+\renewcommand{\bibfont}{\large}
+
+\usepackage{setspace}  \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\usepackage{blindtext}
+%\usepackage{showframe}
+\renewcommand{\arraystretch}{1.2}
+\usepackage{hhline}
+\usepackage{longtable}
+\usepackage{lscape}
+\begin{document}
+%%Create the title page
+\addpageborder	
+\maketitle
+%assign page number
+\pagenumbering{roman}
+\setcounter{page}{2}
+%%Create the declaration page
+\putdecleration
+%%Create the certificate page
+%\putcertificate
+\putnewcertificate
+\putapprovalSheetDepartment
+% \putstudentdec
+%Create the acknowledgement page
+%\addcontentsline{toc}{chapter}{Acknowledgements} 
+\putsvnitack{}
+%{\input{./Sections/ack}}
+% \putsvnitabstract
+% \include{./Sections/abstract}
+%Create the abstract page
+\putsvnitabstract{
+\input{./Sections/abstract}
+}
+%Create the table of contents page
+\bordertoc
+%Create the Bordered LoF page
+%\addcontentsline{toc}{section}{List of Figures} % Entry in ToC
+\borderlof
+
+\borderlot
+%Create the Bordered LoT page
+%\addcontentsline{toc}{section}{List of Tables} % Entry in ToC
+% \input{./Sections/toc}
+
+%List of Acronyms
+%\addcontentsline{toc}{section}{List of Acronyms} % Entry in ToC
+\input{./Sections/Acr}
+%List of Publications
+%\input{./Sections/our_pub}
+
+%\addcontentsline{toc}{section}{List of Symbols} % Entry in ToC
+%\input{./Sections/symb}
+
+\clearpageborder
+
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\setlength{\headheight}{15.2pt}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\rhead{}
+\cfoot{\thepage}
+\renewcommand{\chaptermark}[1]{\markboth{}{}}
+\renewcommand{\sectionmark}[1]{\markright{}}
+\include{Chapter1/ch1} %Introduction
+\include{Chapter2/ch2} %Theoretical Background &
+\include{Chapter3/ch3} %methodology
+\include{Chapter4/ch4}
+%\include{Chapter5/ch5} %future work & conclusion
+
+%Include Appendix
+%\include{Appendix/appndx}
+\newpage
+%Include Bibliography
+%\rhead{\textit{Bibliography}}
+%\addcontentsline{toc}{chapter}{Bibliography}
+%\bibliographystyle{ieeetr}
+%\renewcommand{\bibname}{\bibname}
+%bibliography{SVNITPhDbibtex}
+
+%\renewcommand{\bibname}{Bibliography}
+\bibliographystyle{IEEEtran}
+\bibliography{ref.bib}
+\addcontentsline{toc}{chapter}{ Bibliography}
+\include{Appendix/appndx}
+
+%\rhead{\textit{List of Publications}}
+%\addcontentsline{toc}{chapter}{List of Publications} % Entery in ToC
+%\input{./Sections/our_pub}
+\clearpage
+\newpage 
+
+
+\nocite{*}
+\end{document}

@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: MainReport.aux
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+A level-1 auxiliary file: Chapter1/ch1.aux
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+A level-1 auxiliary file: Chapter2/ch2.aux
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+A level-1 auxiliary file: Chapter3/ch3.aux
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+A level-1 auxiliary file: Chapter4/ch4.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: IEEEtran.bst
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: Appendix/appndx.aux
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: ref.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 33 entries,
+            4087 wiz_defined-function locations,
+            1014 strings with 14892 characters,
+and the built_in function-call counts, 31268 in all, are:
+= -- 2361
+> -- 936
+< -- 284
++ -- 535
+- -- 186
+* -- 1522
+:= -- 4225
+add.period$ -- 70
+call.type$ -- 33
+change.case$ -- 32
+chr.to.int$ -- 711
+cite$ -- 33
+duplicate$ -- 2128
+empty$ -- 2532
+format.name$ -- 199
+if$ -- 7401
+int.to.chr$ -- 0
+int.to.str$ -- 33
+missing$ -- 388
+newline$ -- 122
+num.names$ -- 33
+pop$ -- 964
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 2386
+stack$ -- 0
+substring$ -- 1746
+swap$ -- 1818
+text.length$ -- 47
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 33
+warning$ -- 0
+while$ -- 134
+width$ -- 35
+write$ -- 333

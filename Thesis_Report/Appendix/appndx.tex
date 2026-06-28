@@ -1,0 +1,92 @@
+\begin{appendices}
+    \chapter[HinglishMSA: Technical Specifications]{HinglishMSA: Technical Specifications}
+
+    \section{Model Hyperparameters}
+
+    \begin{table}[H]
+    \centering
+    \caption{MulTHinglish Model Hyperparameters}
+    \begin{tabular}{ll}
+    \toprule
+    \textbf{Hyperparameter} & \textbf{Value} \\
+    \midrule
+    Projection dimension ($d_{\text{model}}$) & 128 \\
+    Cross-modal attention layers ($L$) & 4 \\
+    Attention heads ($H$) & 8 \\
+    Key dimension ($d_k = d_{\text{model}}/H$) & 16 \\
+    Feed-forward hidden dimension & 512 \\
+    Dropout rate & 0.1 \\
+    Total parameters & 5,283,713 \\
+    \midrule
+    Optimizer & Adam \\
+    Learning rate ($\eta$) & $10^{-3}$ \\
+    Weight decay ($\lambda$) & $10^{-4}$ \\
+    LR scheduler & ReduceLROnPlateau \\
+    Scheduler factor & 0.5 \\
+    Scheduler patience & 5 epochs \\
+    Early stopping patience & 15 epochs \\
+    Maximum epochs & 100 \\
+    Loss function & Mean Squared Error (MSE) \\
+    Gradient clip norm & 1.0 \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+    \section{Pre-trained Model Specifications}
+
+    \begin{table}[H]
+    \centering
+    \caption{Pre-trained Models Used for Feature Extraction}
+    \begin{tabular}{lllll}
+    \toprule
+    \textbf{Modality} & \textbf{Model ID} & \textbf{Dim} & \textbf{VRAM} & \textbf{Precision} \\
+    \midrule
+    Text & google/muril-base-cased & 768 & $\sim$500 MB & float32 \\
+    Audio & facebook/wav2vec2-large-xlsr-53 & 1024 & $\sim$600 MB & float16 \\
+    Visual & openai/clip-vit-b-32 & 512 & $\sim$400 MB & float32 \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+    \section{Dataset Construction Timeline}
+
+    \begin{table}[H]
+    \centering
+    \caption{HinglishMSA Pipeline: Tools, Outputs, and Estimated Time}
+    \begin{tabular}{p{3cm} p{3cm} p{3.5cm} r}
+    \toprule
+    \textbf{Phase} & \textbf{Tool} & \textbf{Output} & \textbf{Time} \\
+    \midrule
+    Video discovery & YouTube Data API v3 & 1,179 video IDs & $\sim$1 hr \\
+    Download + frames & pytubefix + ffmpeg & 1,174 WAV + frames & $\sim$3 hrs \\
+    Audio segmentation & ffmpeg silencedetect & 50,695 clips & $\sim$2 hrs \\
+    Face detection & OpenCV Haar Cascade & 43,146 clips & $\sim$4 hrs \\
+    Transcription & faster-whisper large-v3 & 29,500 transcripts & $\sim$8 hrs \\
+    Hinglish detection & Custom algorithm & 6,740 clips & $\sim$0.5 hrs \\
+    Sentiment annotation & Groq llama-3.1-8b & 2,652 usable clips & $\sim$2 hrs \\
+    Feature extraction & MuRIL + wav2vec2 + CLIP & 3 $\times$ npy arrays & $\sim$1.5 hrs \\
+    Model training (all 5) & MulTHinglish & 5 result JSON files & $\sim$1 hr \\
+    \midrule
+    \textbf{Total} & & & $\sim$23 hrs \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+    \section{Feature File Inventory}
+
+    \begin{table}[H]
+    \centering
+    \caption{Feature Files Produced by HinglishMSA Pipeline}
+    \begin{tabular}{llll}
+    \toprule
+    \textbf{File} & \textbf{Shape} & \textbf{Size} & \textbf{Description} \\
+    \midrule
+    \texttt{features/clip\_ids.npy} & (2652,) & $\sim$200 KB & Ordered clip ID strings \\
+    \texttt{features/text\_muril.npy} & (2652, 768) & $\sim$7.7 MB & MuRIL [CLS] embeddings \\
+    \texttt{features/audio\_wav2vec2.npy} & (2652, 1024) & $\sim$10.3 MB & wav2vec2-XLSR mean-pooled \\
+    \texttt{features/visual\_clip.npy} & (2652, 512) & $\sim$5.1 MB & CLIP 5-frame mean-pooled \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+\end{appendices}

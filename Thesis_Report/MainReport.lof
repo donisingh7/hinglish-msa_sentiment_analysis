@@ -1,0 +1,26 @@
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Multimodal sentiment analysis framework adopted in this thesis. Text, audio, and visual streams are independently encoded by pre-trained multilingual models, projected to a shared 128-dimensional space, and fused via cross-modal attention to predict a continuous sentiment score.}}{2}{figure.7}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces The Hindi--English language continuum. Existing MSA benchmarks occupy the monolingual English endpoint; HinglishMSA is designed to address the under-resourced code-mixed centre.}}{3}{figure.10}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces End-to-end HinglishMSA construction pipeline. Each processing stage is shown alongside the number of data items surviving that stage, revealing how the original 50{,}695 candidate clips are progressively refined to the 2{,}652 high-quality annotated clips used for model training.}}{5}{figure.15}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Chronological evolution of sentiment analysis methodologies, from hand-crafted lexicons to pre-trained transformer models.}}{11}{figure.42}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Three modality streams used in HinglishMSA and the feature representations extracted by the corresponding pre-trained encoders.}}{12}{figure.46}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Three multimodal fusion strategies. Early fusion concatenates raw features; late fusion combines independent unimodal predictions; model-level fusion (used in this thesis via MulT) learns cross-modal interactions during representation learning.}}{13}{figure.52}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Cross-modal attention in MulT. Solid arrows indicate the query source (the modality being enriched); dashed arrows indicate key-value sources (the modalities providing context). Each fused representation $\hat {Z}_\alpha $ integrates attended information from both other modalities.}}{14}{figure.62}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Five-stage HinglishMSA end-to-end pipeline from YouTube video collection to sentiment score prediction.}}{21}{figure.97}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Three-stage Hinglish detection algorithm. Stages are applied in order; a transcript exits the pipeline as soon as it satisfies any stage's criterion.}}{24}{figure.108}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Detection count comparison: naive ASR language label vs.\ three-stage Hinglish detection algorithm across 29,500 transcribed clips.}}{25}{figure.113}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces HinglishMSA dataset construction funnel showing the number of clips surviving each filtering stage.}}{28}{figure.124}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces HinglishMSA sentiment score distribution (left) and annotation confidence breakdown (right).}}{28}{figure.126}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Feature extraction for the three modalities. Each clip produces a fixed-length vector stored offline before model training.}}{30}{figure.134}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces MulTHinglish architecture: three modality streams are projected to a common dimension, processed by six directed cross-modal attention modules, concatenated, and passed through a regression head.}}{30}{figure.137}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Six directed cross-modal attention streams in MulTHinglish (T = Text, A = Audio, V = Visual). Each directed edge represents a four-layer cross-modal transformer.}}{32}{figure.145}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Modality inclusion matrix across the five experimental configurations. Green (\text {$\mathsurround \z@ \mathchar "458$}) indicates modality active; red ($\times $) indicates modality absent.}}{35}{figure.167}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Binary accuracy (Acc-2, \%) comparison across all five HinglishMSA experiments. Blue bars = trimodal; red = text-only; green = high-confidence. Dashed line marks the CMU-MOSI English reference.}}{40}{figure.185}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Comprehensive metric comparison across all five experimental configurations on HinglishMSA.}}{40}{figure.187}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Estimated incremental Acc-2 gain from adding audio ($+$22.0 pp) and visual ($+$6.7 pp) modalities over the text-only baseline. Audio provides the dominant lift.}}{42}{figure.195}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces System component to contribution mapping for MulTHinglish. The 28.7 percentage point gain from cross-modal fusion is the most measurable contribution.}}{44}{figure.206}%
+\addvspace {10\p@ }
